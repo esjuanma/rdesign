@@ -1,0 +1,216 @@
+body {
+    background: #13A89E;
+    color: #F7F6D7;
+    margin: 0;
+    font-family: 'Myriad Pro';
+    text-align: center;
+}
+
+section {
+    margin: 150px 0;
+}
+
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+    width: 60%;
+}
+
+/* Title */
+h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+    text-decoration: underline;
+    letter-spacing: 5px;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Contact */
+form {
+    width: 60%;
+    display: inline-block;
+}
+
+label, input, textarea {
+    display: block;
+}
+
+label {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+input, textarea, button {
+    background: #F7F6D7;
+    color: #13A89E;
+    font-weight: bold;
+    font-family: 'Myriad Pro';
+    border: 0;
+    padding: 10px 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input, textarea {
+    width: 100%;
+    margin-top: 2px;
+}
+
+input, button {
+    height: 44px;
+    line-height: 30px;
+}
+
+textarea {
+    height: 200px;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 21px;
+    margin-right: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+    transition: .2s opacity;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+/* About me */
+.about-me {
+    color: #333;
+    background-image: url(img/about.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 275px 0;
+    font-size: 30px;
+}
+
+/* My work */
+.works-container {
+    overflow: hidden;
+}
+.work {
+    float: left;
+    width: 30%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    padding: 2%;
+    background: #F7F6D7;
+    box-sizing: border-box;
+    transition: .5s all;
+    cursor: pointer;
+}
+.work:nth-child(3n) {
+    margin-right: 0;
+}
+.work:hover {
+    padding: 0.5%;
+}
+
+/* Tablet and desktop */
+@media screen and (max-width: 1365px) {
+    
+    .container {
+        width: 800px;
+    }
+
+    .about-me {
+        font-size: 24px;
+        padding: 215px 0;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 1023px) {
+    
+    .container {
+        width: 600px;
+    }
+
+    .about-me {
+        font-size: 18px;
+        padding: 160px 0;
+        line-height: 22px;
+    }
+}
+
+
+/* Mobile and tablet */
+@media screen and (max-width: 719px) {
+    
+    .container {
+        width: 400px;
+    }
+
+    .about-me {
+        font-size: 13px;
+        padding: 110px 0;
+        line-height: 14px;
+    }
+
+    section {
+        margin: 50px 0;
+    }
+
+
+    form {
+        width: 100%;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 479px) {
+    
+    h2 {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .container {
+        width: 300px;
+    }
+
+    .about-me {
+        font-size: 14px;
+        padding: 0;
+        line-height: 18px;
+        background: none;
+        color: #F7F6D7;
+        text-align: left;
+    }
+
+    .about-me br {
+        display: none;
+    }    
+
+    label {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .work {
+        width: 49%;
+    }
+    .work:nth-child(3n) {
+        margin-right: 2%;
+    }
+    
+    .work:nth-child(2n) {
+        margin-right: 0;
+    }
+}
